@@ -1,0 +1,28 @@
+    [
+      {
+        "id": "intro_video",
+        "videoURL": "https://res.cloudinary.com/dqttcfl5m/video/upload/v1748942496/Scene1_Good_z2uz6r.mp4",
+        "choices": [
+          {
+            "label": "Axial Skeleton",
+            "color": "#FF5733",
+            "nextId": "axial_video"
+          },
+          {
+            "label": "Appendicular Skeleton",
+            "color": "#33C1FF",
+            "nextId": "appendicular_video"
+          }
+        ]
+      },
+      {
+        "id": "axial_video",
+        "videoURL": "https://res.cloudinary.com/dqttcfl5m/video/upload/v1748942478/Axialsystem_Good_nmbivp.mp4",
+        "choices": []
+      },
+      {
+        "id": "appendicular_video",
+        "videoURL": "https://res.cloudinary.com/dqttcfl5m/video/upload/v1748942493/Appendicular_System_Good_lhnrqu.mp4",
+        "choices": []
+      }
+    ]
