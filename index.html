@@ -1,0 +1,40 @@
+<!-- Version 1.0.0 - May 30, 2025 - Main HTML structure -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>360° Educational Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A-Frame Library -->
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS Modules -->
+    <script type="module" src="js/main.js"></script>
+  </head>
+
+  <body>
+<a-scene>
+  <a-videosphere id="video-sphere" rotation="0 -90 0"></a-videosphere>
+
+  <!-- Camera with cursor for gaze-based clicking -->
+  <a-entity id="camera" camera look-controls>
+    <a-entity 
+      cursor="fuse: true; fuseTimeout: 1000"
+      raycaster="objects: .clickable"
+      position="0 0 -1"
+      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+      material="color: white; shader: flat">
+    </a-entity>
+  </a-entity>
+</a-scene>
+
+
+    <!-- Overlay UI -->
+    <div id="start-overlay">Click anywhere to begin</div>
+  </body>
+</html>
